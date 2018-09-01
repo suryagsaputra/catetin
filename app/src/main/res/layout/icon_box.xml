@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/icon_title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/icon_box"
+        android:text="catetin"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+
+        android:id="@+id/icon_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/icon_title"
+        android:layout_toRightOf="@+id/icon_box"
+        android:text="Masih jaman absen di kertas?"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/icon_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_background">
+
+        <ImageView
+            android:id="@+id/icon_book"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/book" />
+
+        <ImageView
+            android:id="@+id/icon_women"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/icon_book"
+            android:src="@drawable/woman" />
+
+        <ImageView
+            android:id="@+id/icon_report"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/icon_book"
+            android:src="@drawable/report" />
+
+        <ImageView
+            android:id="@+id/icon_calendar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/icon_report"
+            android:layout_toRightOf="@+id/icon_women"
+            android:src="@drawable/calendar" />
+    </RelativeLayout>
+
+</RelativeLayout>
