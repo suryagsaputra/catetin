@@ -30,8 +30,8 @@ class LoginActivity : BaseActivity() {
     }
 
     private fun validateUser(): Boolean {
-        return login_username.text.toString().equals("admin") &&
-                login_password.text.toString().equals("123456")
+        return login_username.text.toString() == "admin" &&
+                login_password.text.toString() == "123456"
     }
 
     private fun startMainActivity() {
