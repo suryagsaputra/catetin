@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "689448695252",
+    "firebase_url": "https://catetin-53517.firebaseio.com",
+    "project_id": "catetin-53517",
+    "storage_bucket": "catetin-53517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689448695252:android:312defbe97b6a795",
+        "android_client_info": {
+          "package_name": "project.sabil.schedulin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689448695252-37lplf1o2cuv2hvk64c9tu8j1djfhc3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.sabil.schedulin",
+            "certificate_hash": "f88aa1322617d9c0a73ca09259e1e27112847797"
+          }
+        },
+        {
+          "client_id": "689448695252-p3k6n9j4m131rkrqljdcice2pdlvvru3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61TY_tmo3GTA5EAlSxIIdTOE0VHcwMEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689448695252-p3k6n9j4m131rkrqljdcice2pdlvvru3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
