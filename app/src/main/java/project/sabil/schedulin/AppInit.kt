@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import org.koin.android.ext.android.startKoin
 import project.sabil.schedulin.base.baseModule
+import project.sabil.schedulin.data.keyStoreModule
 
 class AppInit : Application(), Application.ActivityLifecycleCallbacks {
 
@@ -16,8 +17,12 @@ class AppInit : Application(), Application.ActivityLifecycleCallbacks {
 
     private fun initKoin() {
         startKoin(
-                this,
-                listOf(baseModule)
+            this,
+            listOf(
+                baseModule,
+                appModule,
+                keyStoreModule
+            )
         )
     }
 
