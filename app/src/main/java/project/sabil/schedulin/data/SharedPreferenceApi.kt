@@ -3,6 +3,7 @@ package project.sabil.schedulin.data
 import android.content.Context
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
+import androidx.core.content.edit
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import org.json.JSONException
@@ -13,9 +14,9 @@ class SharedPreferenceApi(context: Context,
     private val editor: SharedPreferences.Editor = sharedPreferences.edit()
 
     override fun putBoolean(key: String, value: Boolean) {
-        editor
-                .putBoolean(key, value)
-                .apply()
+        sharedPreferences.edit {
+            putBoolean(key, value)
+        }
     }
 
     override fun getBoolean(key: String, defaultValue: Boolean): Boolean {
@@ -23,9 +24,9 @@ class SharedPreferenceApi(context: Context,
     }
 
     override fun putInt(key: String, value: Int) {
-        editor
-                .putInt(key, value)
-                .apply()
+        sharedPreferences.edit {
+            putInt(key, value)
+        }
     }
 
     override fun getInt(key: String, defaultValue: Int): Int {
@@ -33,9 +34,9 @@ class SharedPreferenceApi(context: Context,
     }
 
     override fun putString(key: String, value: String) {
-        editor
-                .putString(key, value)
-                .apply()
+        sharedPreferences.edit {
+            putString(key, value)
+        }
     }
 
     override fun getString(key: String, defaultValue: String): String {
